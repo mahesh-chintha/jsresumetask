@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nav=document.createElement("div")
+        nav.style.width="100%";
+        nav.style.backgroundColor="white"
+        
+        nav.style.position="fixed";
+        nav.style.top="0px";
+        
+
+        document.body.appendChild(nav)
+        var d = document.createElement("div");
+        d.style.paddingBottom = "1.5vh";
+        d.style.marginTop = "20px";
+        d.style.display = "flex";
+        d.style.fontSize = "2em";
+        d.style.justifyContent = "space-between";
+        nav.appendChild(d);
+
+        var e = document.createElement("div");
+        e.innerText = "BR Architectures";
+        d.appendChild(e);
+
+        var f = document.createElement("div");
+        f.innerText = "projects contact About";
+        f.style.wordSpacing = "2vw";
+        f.style.fontSize = "1em";
+        d.appendChild(f);
+
+        var g = document.createElement("div");
+        g.style.width = "99vw";
+        g.style.height = "100vh";
+        g.style.backgroundImage = "url('https://www.w3schools.com/w3images/architect.jpg')";
+        g.style.backgroundSize = "cover";
+        g.style.backgroundRepeat = "no-repeat";
+        g.style.marginTop="10vh"
+        document.body.appendChild(g);
+
+        var z = document.createElement("div");
+        z.style.display = "grid";
+        z.style.gridTemplateColumns = "auto auto auto auto";
+        z.style.placeItems="center"
+        z.style.marginTop = "10vh";  
+        z.style.gap = "10px"; 
+        document.body.appendChild(z);
+        console.log(z)
+
+        var text = ["summer house", "brick house", "light House", "red house", "summer house", "brick house", "light House", "red house"];
+        var images = ["https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house3.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house3.jpg"];
+
+        for (var i = 0; i < images.length; i++) {
+            var b = document.createElement("div");
+            b.style.width = "20vw";
+            b.style.height = "40vh";
+            b.style.backgroundRepeat = "no-repeat";
+            b.style.backgroundImage = `url(${images[i]})`;
+            z.appendChild(b);
+
+            var c = document.createElement("div");
+            c.innerText = text[i];
+            c.style.width = "5vw";
+            c.style.padding = "0.5vw";
+            c.style.borderRadius = "2vh";
+            c.style.color = "white";
+            c.style.backgroundColor = "black";
+            b.appendChild(c);
+        }
+
+
+ var i=document.createElement("div")
+i.style.fontSize="2em";
+i.style.fontStyle="bold"
+i.innerText="About"
+i.style.borderBottom="2px solid grey"
+i.style.paddingBottom="2vh"
+document.body.appendChild(i);
+
+
+var h=document.createElement("div")
+h.style.width="98vw";
+h.style.height="30vh";
+h.style.marginTop="1%"
+h.style.paddingLeft="3%"
+h.style.display="flex";
+h.style.justifyContent="center"
+
+document.body.appendChild(h);
+
+
+var lst1=document.createElement("div")
+lst1.style.width="98vw";
+lst1.style.height="100vh"
+
+h.appendChild(lst1)
+var j=document.createElement("div");
+j.style.width="80%";
+j.style.height="30%"
+j.style.backgroundImage="url('https://www.w3schools.com/w3images/team2.jpg')";
+lst1.appendChild(j);
+var k = document.createElement("div")
+k.innerHTML = `John Doe <br>
+CEO & Founder <br>
+Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse   sodales pellentesque elementum`;
+k.style.fontSize="1.5em"
+lst1.appendChild(k);
+var l=document.createElement("div")
+l.innerText="Contact";
+l.style.border="1px solid black"
+l.style.width="80%";
+l.style.padding="1vh";
+l.style.lineHeight="3vh"
+l.style.backgroundColor="grey"
+l.style.textAlign="center"
+lst1.appendChild(l)
+
+
+var lst1=document.createElement("div")
+lst1.style.width="98vw";
+lst1.style.height="100vh"
+
+h.appendChild(lst1)
+var j=document.createElement("div");
+j.style.width="80%";
+j.style.height="30%"
+j.style.backgroundImage="url('https://www.w3schools.com/w3images/team3.jpg')";
+lst1.appendChild(j);
+var k = document.createElement("div")
+k.innerHTML = `John Doe <br>
+CEO & Founder <br>
+Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse   sodales pellentesque elementum`;
+k.style.fontSize="1.5em"
+lst1.appendChild(k);
+var l=document.createElement("div")
+l.innerText="Contact";
+l.style.border="1px solid black"
+l.style.width="80%";
+l.style.padding="1vh";
+l.style.lineHeight="3vh"
+l.style.backgroundColor="grey"
+l.style.textAlign="center"
+lst1.appendChild(l)
+
+var lst1=document.createElement("div")
+lst1.style.width="98vw";
+lst1.style.height="100vh"
+
+h.appendChild(lst1)
+var j=document.createElement("div");
+j.style.width="80%";
+j.style.height="30%"
+j.style.backgroundImage="url('https://www.w3schools.com/w3images/team4.jpg')";
+lst1.appendChild(j);
+var k = document.createElement("div")
+k.innerHTML = `John Doe <br>
+CEO & Founder <br>
+Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse   sodales pellentesque elementum`;
+k.style.fontSize="1.5em"
+lst1.appendChild(k);
+var l=document.createElement("div")
+l.innerText="Contact";
+l.style.border="1px solid black"
+l.style.width="80%";
+l.style.padding="1vh";
+l.style.lineHeight="3vh"
+l.style.backgroundColor="grey"
+l.style.textAlign="center"
+lst1.appendChild(l)
+
+
+
+var final = document.createElement("div");
+final.style.marginTop = "20vh";  
+final.style.width = "100%";
+final.style.height = "50vh";  
+final.innerHTML = `<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.301909818841!2d78.39954787493728!3d17.493095683412278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1725996065592!5m2!1sen!2sin' width='100%' height='100%' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>`;
+document.body.appendChild(final);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
