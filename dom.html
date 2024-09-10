@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .education2{
+            line-height: 2;
+        }
+        .paragraph{
+            line-height: 2;
+        }
+        .heading2,.education,.heading1,.technical{
+            border-bottom: 3px solid rgb(114, 104, 104);
+        }
+        .skills{
+            margin-top: 10px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+</body>
+
+<script>
+    var heading1 = document.createElement("h1");
+    heading1.innerText = "CH.Mahesh";
+    heading1.className = "heading1";
+    heading1.style.fontSize = "1.5em";
+    heading1.style.color = "black";
+    document.body.appendChild(heading1);
+
+    var heading2 = document.createElement("h2");
+    heading2.innerText = "Career Objective:";
+    heading2.className = "heading2";
+    document.body.appendChild(heading2);
+
+    var paragraph = document.createElement("p");
+    paragraph.style.fontSize = "1.1em";
+    paragraph.className = "paragraph";
+    paragraph.innerText = "To secure a challenging position as a Front-End Developer where I can leverage my knowledge of HTML, CSS, JavaScript, and responsive web design to create user-friendly websites and applications, while continuously improving my skills and contributing to a dynamic team.";
+    document.body.appendChild(paragraph);
+
+    var education = document.createElement("h2");
+    education.innerText = "Education:";
+    education.className = "education";
+    document.body.appendChild(education);
+
+    var education2 = document.createElement("p");
+    education2.className = "education2";
+    education2.innerHTML = "B.TECH-Baptla Engineering-college<br>INTERMEDIATE-Vignan co-operatibe junior college<br>SSC-sree bharathi school";
+    document.body.appendChild(education2);
+
+    var technical = document.createElement("h2");
+    technical.innerText = "Technical Skills";
+    technical.className = "technical";
+    document.body.appendChild(technical);
+
+    var skills = document.createElement("p");
+    skills.className = "skills";
+    skills.innerHTML = "HTML<br>CSS<br>JavaScript<br>Python<br>SQL";
+    document.body.appendChild(skills);
+
+    var technical = document.createElement("h2");
+    technical.innerText = "Professional Experience";
+    technical.className = "technical";
+    document.body.appendChild(technical);
+
+    var skills = document.createElement("p");
+    skills.className = "skills";
+    skills.innerHTML = "Internshala<br>Trained in HTML,CSS,JS.Hands on experience with creating forms";
+    document.body.appendChild(skills);
+
+    var technical = document.createElement("h2");
+    technical.innerText = "Projects";
+    technical.className = "technical";
+    document.body.appendChild(technical);
+
+    var skills = document.createElement("p");
+    skills.className = "skills";
+    skills.innerHTML = "Brain Tumour Detection using CNN <br> our project focuses on advanced computer techniques called convulational neural networks and VGG16 to help doctors to find the brain tumor the input we taken is MRI image";
+    document.body.appendChild(skills);
+
+
+
+    var technical = document.createElement("h2");
+    technical.innerText = "Declaration";
+    technical.className = "technical";
+    document.body.appendChild(technical);
+
+    var skills = document.createElement("p");
+    skills.className = "skills";
+    skills.innerHTML = "I hereby declare that above mentoned information and particulars are true and correct to be the best of my knowledge";
+    document.body.appendChild(skills);
+
+
+</script>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        <img src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3" alt="" width="100%" height="100%">
+    </div>
+    <button>html</button>
+    <button>Css</button>
+    <button>Java Script</button>
+    <button>React</button>
+    
+    <script>
+        var div=document.querySelector("div")
+        div.style.width="30vw";
+        div.style.height="40vh";
+        div.style.paddingBottom="1.5vh"
+        var img1=div.querySelector("img")
+        var btn=document.querySelectorAll("button")
+        btn[0].addEventListener("click",function(){
+            img1.src="https://verpex.com/assets/uploads/images/blog/Basic-HTML-Codes-for-Websites.webp?v=1691760654"
+            
+        })
+        
+        btn[1].addEventListener("click",function(){
+            img1.src="https://cdn.prod.website-files.com/64a6f67b79a80fd9ff31ca7a/651861925d86eb8b1c8d90b0_651189e081964b9002b1e6d1_64c2586cc3eccac8b6a2e3a9_tb.png"
+           
+        })
+        btn[2].addEventListener("click",function(){
+            img1.src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LyZcwuLWv2FArOumCxobpA.png"
+           
+        })
+        btn[3].addEventListener("click",function(){
+            img1.src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg"
+           
+        })
+        
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
